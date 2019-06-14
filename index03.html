@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = 17;
+
+        if(isPrime(a)){
+            document.write("So " + a + " La so nguyen to")
+        }
+        else {
+            document.write("So " + a + "  Khong La so nguyen to")
+        }
+
+        function isPrime(num) {
+            var isPrime = false;
+            var count  = 0;
+            for(var i = 1 ; i <= num;i++){
+                if(num%i==0){
+                    count++;
+                }
+            }
+
+            if(count ==2){
+                isPrime = true;
+            }
+            
+            return isPrime;
+        }
+    </script>
+</body>
+</html>
